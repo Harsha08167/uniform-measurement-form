@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform Measurement Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .form-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="date"], input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        input[type="text"]:focus, input[type="date"]:focus, input[type="number"]:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+        .note {
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="logo">
+            <img src="https://ijantakergarments.odoo.com/web/image/website/1/logo/baspi?unique=819ea54" alt="Ijan Taker Garments Logo">
+        </div>
+        <h1>Uniform Measurement Form</h1>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfEjiUrfPIg6KaKu8dRXynLiWVSToefYF78UpeJ3kBxL099sw/formResponse" method="POST">
+            <div class="form-group">
+                <label for="entry.877086558">Name:</label>
+                <input type="text" id="entry.877086558" name="entry.877086558" value="Harsha" required>
+            </div>
+            <div class="form-group">
+                <label for="entry.1498135098">Quantity:</label>
+                <input type="number" id="entry.1498135098" name="entry.1498135098" value="2" required>
+            </div>
+            <div class="form-group">
+                <label for="entry.1424661284">Size:</label>
+                <input type="text" id="entry.1424661284" name="entry.1424661284" value="14/22" required>
+            </div>
+            <div class="form-group">
+                <label for="entry.2606285">Age:</label>
+                <input type="number" id="entry.2606285" name="entry.2606285" value="34" required>
+            </div>
+            <div class="form-group">
+                <label for="entry.954077988">Date:</label>
+                <input type="date" id="entry.954077988" name="entry.954077988" value="2025-10-21" required>
+            </div>
+            <div class="form-group">
+                <label for="entry.1015341493">Remarks:</label>
+                <input type="text" id="entry.1015341493" name="entry.1015341493" value="Good" required>
+            </div>
+            <button type="submit">Submit Measurement</button>
+        </form>
+        <div class="note">
+            This form submits directly to Google Forms. Ensure all fields are filled accurately.
+        </div>
+    </div>
+</body>
+</html>
